@@ -93,25 +93,25 @@ class Blockchain():
 
 
 #for testing purposes
-def main():
-    blockchain = Blockchain()
-    database = ["hello", "goodbye", "test", "DATA here"]
+# def main():
+#     blockchain = Blockchain()
+#     database = ["hello", "goodbye", "test", "DATA here"]
 
-    num = 0
+#     num = 0
 
-    for data in database:
-        num += 1
-        blockchain.mine(Block(num, data=data))
+#     for data in database:
+#         num += 1
+#         blockchain.mine(Block(num, data=data))
 
-    for block in blockchain.chain:
-        print(block)
+#     for block in blockchain.chain:
+#         print(block)
 
-    print(blockchain.isValid())
+#     print(blockchain.isValid())
 
-    blockchain.chain[2].data = "NEW DATA"
-    blockchain.mine(blockchain.chain[2])
-    print(blockchain.isValid())
+#     blockchain.chain[2].data = "NEW DATA"
+#     blockchain.mine(blockchain.chain[2])
+#     print(blockchain.isValid())
 
 
-if __name__ == '__main__':
-    main()
+# if __name__ == '__main__':
+#     main()
