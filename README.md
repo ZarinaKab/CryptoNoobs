@@ -1,2 +1,2 @@
 # CryptoNoobs
-Created cryptocurrency in python.
+Simple realization of cryptocurrency.
